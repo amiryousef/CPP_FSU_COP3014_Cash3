@@ -1,0 +1,151 @@
+From: <Saved by Windows Internet Explorer 7>
+Subject: Project 2-Cash 3
+Date: Thu, 6 May 2010 13:25:19 -0400
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://ww2.cs.fsu.edu/~porter/cop3014/summer2010/projects/Project%202.htm
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5579
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Project 2-Cash 3</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<META content=3D"MSHTML 6.00.6000.17023" name=3DGENERATOR></HEAD>
+<BODY bgColor=3D#ffffff>
+<P align=3Dcenter><FONT face=3DVerdana size=3D5><STRONG>Project 2-Cash=20
+3</STRONG></FONT></P>
+<P><FONT face=3DVerdana size=3D2><STRONG>Description: </STRONG>In this =
+project, you=20
+will gain experience with classes, objects, random numbers, and control=20
+structures.</FONT></P>
+<P><FONT face=3DVerdana size=3D2><STRONG>Details:</STRONG> Write a =
+program to=20
+simulate the Cash 3 lottery game. For simplicity, it will only simulate =
+the=20
+straight play. That is, you must guess the numbers in exact order. For =
+this=20
+project, I have provided a file named </FONT><A=20
+href=3D"http://ww2.cs.fsu.edu/~porter/cop3014/summer2010/projects/cash3.h=
+"=20
+target=3D_blank><FONT face=3DVerdana =
+size=3D2><STRONG>cash3.h</STRONG></FONT></A><FONT=20
+face=3DVerdana size=3D2>. </FONT></P>
+<P><FONT face=3DVerdana size=3D2>Your first task is to write a =
+corresponding=20
+implementation of the class functions in class <STRONG>Cash3</STRONG>. =
+Put these=20
+implementations in a file named <STRONG>cash3.cpp</STRONG>. There are =
+four=20
+functions to implement. The first three simply return the value of the=20
+corresponding class variable, which will be a number from 0 to 9. The=20
+<STRONG>Draw() </STRONG>function will set each of the class variables to =
+a=20
+random number from 0 to 9.</FONT></P>
+<P><FONT face=3DVerdana size=3D2>Your second task is to create a driver =
+program in a=20
+file named <STRONG>cash3driver.cpp</STRONG>. Your driver will make use =
+of a loop=20
+to ask the user to enter three numbers. Upon entering the three numbers, =
+you=20
+will use a <STRONG>Cash3</STRONG> object to draw three random numbers. =
+You will=20
+then compare the drawn numbers to the ones the user entered and print to =
+the=20
+screen whether the user has won or lost. At the end of the loop, you =
+will ask=20
+the user if they want to play again. If they type the character 'y' or =
+'Y',=20
+assume that they do. Otherwise, assume that they don't and exit the =
+program. You=20
+can assume valid input from the user. That is, you can assume three =
+integral=20
+numbers from 0 to 9, separated by space(s), will be entered. See my =
+sample runs=20
+below to compare.</FONT></P>
+<P><FONT face=3DVerdana size=3D2><STRONG>Programming Tips:</STRONG> =
+Random numbers=20
+are an interesting topic in computing. In C++, we have two functions =
+that=20
+facilitate the generation of random numbers: <STRONG>srand()</STRONG> =
+and=20
+<STRONG>rand()</STRONG>, both defined in the header=20
+<STRONG>&lt;cstdlib&gt;</STRONG>. Pages 220-225 of your book will show =
+you an=20
+example of how to use them. Next, you may find it useful to use =
+</FONT><A=20
+href=3D"http://ww2.cs.fsu.edu/~porter/cop3014/summer2010/projects/cash3.h=
+"=20
+target=3D_blank><FONT face=3DVerdana =
+size=3D2><STRONG>cash3.h</STRONG></FONT></A><FONT=20
+face=3DVerdana size=3D2> as a reference for how to format and comment =
+your own code.=20
+You will notice an identifier being defined near the top of the file =
+that may=20
+look strange. It's used to prevent multiple inclusion of the file in the =
+
+compilation process. Even though we don't cover chapter 9, the book =
+gives a good=20
+explanation of why we use this mechanism on page 398. You will want to =
+use the=20
+same mechanism in <STRONG>cash3.cpp</STRONG>. These identifiers should =
+be=20
+unique. So, you can use <STRONG>CASH3_CPP</STRONG>, for example. Note =
+that=20
+<STRONG>YOU WON'T</STRONG> want to use this mechanism in your driver =
+file=20
+(<STRONG>cash3driver.cpp</STRONG>). </FONT></P>
+<P><FONT face=3DVerdana size=3D2><STRONG>Sample Runs: =
+</STRONG></FONT></P>
+<BLOCKQUOTE>
+  <P><FONT face=3D"Courier New" color=3D#ff0000 size=3D2>Enter three =
+numbers: 5 5=20
+  5<BR><BR>Your numbers are 5 5 5.<BR><BR>The winning numbers are 4 5=20
+  2.<BR><BR>Sorry, you lose!<BR><BR>Would you like to play again? =
+y<BR><BR>Enter=20
+  three numbers: 2 2 2<BR><BR>Your numbers are 2 2 2.<BR><BR>The winning =
+numbers=20
+  are 7 9 9.<BR><BR>Sorry, you lose!<BR><BR>Would you like to play =
+again?=20
+  y<BR><BR>Enter three numbers: 4 8 8<BR><BR>Your numbers are 4 8 =
+8.<BR><BR>The=20
+  winning numbers are 7 6 1.<BR><BR>Sorry, you lose!<BR><BR>Would you =
+like to=20
+  play again? y<BR><BR>Enter three numbers: 2 8 7<BR><BR>Your numbers =
+are 2 8=20
+  7.<BR><BR>The winning numbers are 9 1 8.<BR><BR>Sorry, you =
+lose!<BR><BR>Would=20
+  you like to play again? y</FONT></P>
+  <P><FONT face=3D"Courier New" color=3D#ff0000 size=3D2>Enter three =
+numbers: 1 2=20
+  3<BR><BR>Your numbers are 1 2 3.<BR><BR>The winning numbers are 4 6=20
+  3.<BR><BR>Sorry, you lose!<BR><BR>Would you like to play again? =
+y<BR><BR>Enter=20
+  three numbers: 6 7 2<BR><BR>Your numbers are 6 7 2.<BR><BR>The winning =
+numbers=20
+  are 0 2 8.<BR><BR>Sorry, you lose!<BR><BR>Would you like to play =
+again?=20
+  y<BR><BR>Enter three numbers: 0 2 3<BR><BR>Your numbers are 0 2 =
+3.<BR><BR>The=20
+  winning numbers are 0 9 5.<BR><BR>Sorry, you lose!<BR><BR>Would you =
+like to=20
+  play again? y<BR><BR>Enter three numbers: 2 3 5<BR><BR>Your numbers =
+are 2 3=20
+  5.<BR><BR>The winning numbers are 3 5 5.<BR><BR>Sorry, you =
+lose!<BR><BR>Would=20
+  you like to play again? y<BR><BR>Enter three numbers: 9 6 =
+3<BR><BR>Your=20
+  numbers are 9 6 3.<BR><BR>The winning numbers are 9 4 9.<BR><BR>Sorry, =
+you=20
+  lose!</FONT></P>
+  <P><FONT face=3D"Courier New" color=3D#ff0000 size=3D2>Would you like =
+to play again?=20
+  y</FONT></P>
+  <P><FONT face=3D"Courier New" color=3D#ff0000 size=3D2>Enter three =
+numbers: 5 8=20
+  9<BR><BR>Your numbers are 5 8 9.<BR><BR>The winning numbers are 5 8=20
+  9.<BR><BR>Congratulations, you win!<BR><BR>Would you like to play =
+again?=20
+  n</FONT></P>
+  <P><FONT face=3D"Courier New" =
+size=3D2><BR></FONT></P></BLOCKQUOTE></BODY></HTML>
